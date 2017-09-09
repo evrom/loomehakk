@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@-webkit-keyframes teeter-totter {
+  0%  {
+    transform:rotate(10deg);
+  }
+  25%  {
+    transform:rotate(-10deg);
+  }
+  50%  {
+    transform:rotate(20deg);
+  }
+  75%  {
+    transform:rotate(-20deg);
+  }
+  100% {
+    transform:rotate(30deg);
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-family: 'Patua One', cursive;
+}
+p {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+.teeter-totter {
+  margin: 200px;
+  height: 200px;
+  width: 300px;
+  background-size: contain;
+  box-sizing: border-box;
+  animation: teeter-totter 2s 1s infinite alternate;
+  background-image:url('./drawing.svg')
+}
